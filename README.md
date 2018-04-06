@@ -35,7 +35,7 @@ All of this code is designed to be run in a [pithy](https://github.com/dansteing
     
 You're good to go with pithy now
     
-To download this repo into your notebook, within the notebook open a terminal and then type
+To download this repo into your jupyter lab space, within the jupyter lab open a terminal and then type
 ```
 git clone https://github.com/dansteingart/MAE_424_534_Spring_2018
 ```
