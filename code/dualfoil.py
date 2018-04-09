@@ -1,3 +1,4 @@
+##OK TO COPY
 ##Author: Dan Steingart
 ##Date Started: 2015-04-01
 ##Notes: Wrapper Script for DualFoil 5.1
@@ -53,14 +54,17 @@ class dualfoil():
                 parts[key] = p[0]
             except Exception as err:
                 print err
-        go("mkdir df_"+self.user+"/files/")
-        go("cp -n "+self.df+"/* df_"+self.user+"/")
+        print go("mkdir -p df_"+self.user+"/files/")
+        print go("cp -n "+self.df+"/* df_"+self.user+"/")
         return parts
     
     def getcycles(self):
         data = open(self.dualbase).read()
         lines = data.split("\n")
         return lines[74]
+    
+    def writeout(self,endless=False):
+        return self.writeOut(endless)
     
     def writeOut(self,endless=False):
         self.cycles = self.cycles.strip()
@@ -264,6 +268,9 @@ class dualfoil():
         out['raw'] = raw
         return out
 
+    def readoutput(self,showraw=False,debug=False,filename=None):
+        return self.readOutput(showraw=showraw,debug=debug,filename=filename)
+
     def surfplot(self,profs,xval,yval,dpi=150):
             times = profs.keys()
             times.sort()
@@ -343,10 +350,11 @@ if __name__ == "__main__":
     df.clear_cycles()
     for i in range(1):
         df.set_ocv(10) #set ocv for 3 minutes
-        df.set_current(30,40) #discharge at 30 A/m^2 for 40 minutes
+        df.set_current(30,60) #discharge at 30 A/m^2 for 40 minutes
         df.set_ocv(10) #set ocv for 10 minutes
-        df.set_current(-30,41) #charge for 40 minutes @ 30 A/m^3
-    
+        df.set_current(-30,60) #charge for 40 minutes @ 30 A/m^3
+        df.set_ocv(10) #set ocv for 10 minutes
+
     
     # uncomment to see available keys
     # pp = df.parts.keys()
