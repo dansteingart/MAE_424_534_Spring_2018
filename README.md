@@ -2,8 +2,6 @@
 ## Electrochemical Energy Storage
 ---
 ## What's Here
-- Lecture Notes
-
 - Python Notebooks
 
 - Python Code
@@ -11,6 +9,7 @@
 
 ## How To Run
 All of this code is designed to be run in a [pithy](https://github.com/dansteingart/pithy) [docker]() container 
+
 ### How To Do The Things
 1. Download [Docker](https://www.docker.com/community-edition) for your platform
 
@@ -36,6 +35,8 @@ All of this code is designed to be run in a [pithy](https://github.com/dansteing
 You're good to go with pithy now
     
 To download this repo into your jupyter lab space, within the jupyter lab open a terminal and then type
+
 ```
 git clone https://github.com/dansteingart/MAE_424_534_Spring_2018
 ```
+
