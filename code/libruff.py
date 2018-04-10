@@ -1,3 +1,4 @@
+##OK TO COPY
 ##Author: Dan Steingart
 ##Date Started: 2017-09-01
 ##Notes: Pull Specta from libRuff
