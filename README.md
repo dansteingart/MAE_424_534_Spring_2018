@@ -7,7 +7,7 @@
 
 
 ## How To Run
-All of this code is designed to be run in a [pithy](https://github.com/dansteingart/pithy) [docker]() container 
+All of this code is designed to be run in a [pithy](https://github.com/dansteingart/pithy) [docker](https://hub.docker.com/r/steingart/pithy/) container.
 
 ### How To Do The Things
 1. Download [Docker](https://www.docker.com/community-edition) for your platform
