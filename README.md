@@ -39,3 +39,5 @@ To download this repo into your jupyter lab space, within the jupyter lab open a
 git clone https://github.com/dansteingart/MAE_424_534_Spring_2018
 ```
 
+Now you're good to go!
+
